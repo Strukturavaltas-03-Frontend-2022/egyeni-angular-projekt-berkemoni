@@ -1,9 +1,9 @@
 Az oldalhoz a kiírásban megadott adatbázist használom, lekérve a következő url-ről: `https://nettuts.hu/jms/berkemoni/cinema`.
-Az oldalt az npm start és? az ng serve utasítással lehet futtatni a `http://localhost:4200/` oldalon.
+Az oldalt az npm start utasítással lehet futtatni a `http://localhost:4200/` oldalon.
 1. adatmodell készítése a `https://nettuts.hu/jms/berkemoni/cinema` alapján, az id nem kötelező az újonnan létrehozott elemek miatt
 2. cimena.service.ts generálása
 3. az adatbázis elérési útjának elhelyezése az environment file-ban
-4. a HttpClientModule importálása az app.module.ts-be
+4. a HttpClientModule és FormsModule importálása az app.module.ts-be (a formok létrehozására és kezelésére)
 5. az apiUrl importálása a cinema.service.ts-be
 6. entitás megadása a cinema.service.ts-ben
 7. CRUD készítése az adatok kezeléséhez
@@ -12,9 +12,11 @@ Az oldalt az npm start és? az ng serve utasítással lehet futtatni a `http://l
 10. a routing beállítása a nav-komponensben
 11. a címek hozzárendelése a komponensekhez az app-routing modulban
 12. az app-componentben a router-outlet elhelyezése
+13. a filmek tömbjének forrását beállítjuk a cinema.component.ts-ben
+14. feliratkozás async pipe-pal a filmek adataira
+15. A kártáyk elkészítése
 
-13. a főoldalon rövid leírás készítése az oldalról
-14. a főoldalon gomb létrehozása, amelyről a listázó oldalra jutunk
+ a főoldalon gomb létrehozása, amelyről a listázó oldalra jutunk
 
 
 
