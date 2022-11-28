@@ -1,1 +1,12 @@
-<p>cinema works!</p>
+<div class="row mt-3">
+    <div class="col-12 col-md-4 col-lg-3" *ngFor="let row of cinemaList$ | async">
+        <div class="card mb-3">
+            <div class="card-header">{{ row.title }}</div>
+            <div class="card-body">
+                <p class="card-text">{{ row.genre }}</p>
+                <p class="card-text">{{ row.director }}</p>
+                <a [routerLink]="['/', 'cinema', 'edit', row.id]" class="btn btn-primary">Edit Cinema</a>
+            </div>
+        </div>
+    </div>
+</div>

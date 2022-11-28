@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Cinema } from 'src/app/model/cinema';
+import { CinemaService } from 'src/app/service/cinema.service';
 
 @Component({
   selector: 'app-cinema',
@@ -7,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CinemaComponent implements OnInit {
 
-  constructor() { }
+  cinemaList$: Observable<Cinema[]> = this.cinemaService.getAll();
 
+  constructor(
+    private cinemaService: CinemaService,
+  ) { }
+    
   ngOnInit(): void {
   }
 
