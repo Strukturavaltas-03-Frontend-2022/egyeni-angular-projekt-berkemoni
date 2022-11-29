@@ -14,9 +14,18 @@ Az oldalt az npm start utasítással lehet futtatni a `http://localhost:4200/` o
 12. az app-componentben a router-outlet elhelyezése
 13. a filmek tömbjének forrását beállítjuk a cinema.component.ts-ben
 14. feliratkozás async pipe-pal a filmek adataira
-15. A kártáyk elkészítése
+15. A kártyák elkészítése, egy sorban laptop méretben négy kártya, tablet méretnél két kártya, mobilnézetben egy kártya van.
+16. A kártyákon kép és gombok elhelyezése
+17. Törlés gomb bekapcsolása
 
- a főoldalon gomb létrehozása, amelyről a listázó oldalra jutunk
+A kártyák azonos magasak legyenek
+A képek azonos magasak legyenek
+ A kártyák fölött/mellett lapozó található, amely segítségével egyszerre csak 20 kártya jelenik meg egy oldalon
+Legyen legalább kettő szűrő, amelyekkel rendezni lehet a kártyákat, illetve keresni lehet bennük
+A kártyás háló fölött van egy új entitás létrehozására szolgáló gomb
+Lapozó
+
+ 
 
 
 

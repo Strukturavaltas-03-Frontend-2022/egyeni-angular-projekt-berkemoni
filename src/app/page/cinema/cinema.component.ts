@@ -19,4 +19,16 @@ export class CinemaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onDelete(cinema: Cinema): void {
+    this.cinemaService.delete(cinema).subscribe(
+      cinema => this.cinemaList$ = this.cinemaService.getAll(),
+    );
+  }
+
+  onUpdate(cinema: Cinema): void {
+    this. cinemaService.update(cinema).subscribe(
+      
+    );
+  }
+
 }
